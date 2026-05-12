@@ -3,7 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Google Sans", sans-serif;
-  background: #f2f2f2;
+}
+
+body{
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b
+  );
 }
 
 .search-bar {
@@ -14,9 +21,20 @@
 #search {
   width: 300px;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid rgb(56, 86, 150);
   border-radius: 25px;
   font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: wheat;
+}
+
+#search:focus {
+  background-color: rgba(23, 44, 112, 0.1) !important;
+  border: 1px solid #42526b !important;
+}
+
+#search::placeholder {
+  color: wheat;
 }
 
 .search-bar button {
@@ -36,16 +54,56 @@
 
 .city-name{
   font-size: 40px;
+  color: thistle;
 }
 
 .temperature {
   font-size: 90px;
+  color: thistle;
 }
 
 .weather-condition{
   font-size: 20px;
+  color: thistle;
 }
 
 .additional-weather{
   margin-top: 100px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+
+.secondary-additional-weather{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.additional-weather p{
+    height: 125px;
+    width: 171px;
+    font-size: larger;
+    align-content: center;
+    border: 1px solid #42526b;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(38, 107, 245, 0.092);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: thistle;
+}
+
+.secondary-additional-weather p{
+    height: 125px;
+    width: 171px;
+    font-size: larger;
+    align-content: center;
+    border: 1px solid #42526b;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(38, 107, 245, 0.092);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: thistle;
 }
