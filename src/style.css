@@ -3,5 +3,49 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Google Sans", sans-serif;
+  background: #f2f2f2;
 }
 
+.search-bar {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#search {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#weather-main {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.city-name{
+  font-size: 40px;
+}
+
+.temperature {
+  font-size: 90px;
+}
+
+.weather-condition{
+  font-size: 20px;
+}
+
+.additional-weather{
+  margin-top: 100px;
+}
